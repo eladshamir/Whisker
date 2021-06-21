@@ -6,7 +6,7 @@ This tool is based on code from [DSInternals](https://github.com/MichaelGrafnett
 
 For this attack to succeed, the environment must have a Domain Controller running on Windows Server 2016, and the Domain Controller must have a server authentication certificate to allow for PKINIT Kerberos authentication.
 
-More details are available at the post [Shadow Credentials: Abusing Key Trust Account Mapping for Takeover](https://TBD).
+More details are available at the post [Shadow Credentials: Abusing Key Trust Account Mapping for Takeover](https://posts.specterops.io/shadow-credentials-abusing-key-trust-account-mapping-for-takeover-8ee1a53566ab).
 
 ## Usage
 
