@@ -29,13 +29,13 @@ Example: `Whisker.exe add /target:computername$ /domain:constoso.local /dc:dc1.c
 
 ### Remove a value from the msDS-KeyCredentialLink attribute of a target object:
 
- - `/target:<samAccountName>**: Required. Set the target name. Computer objects should end with a '$' sign.
+ - `/target:<samAccountName>`: Required. Set the target name. Computer objects should end with a '$' sign.
     
- - `/deviceID:<GUID>**: Required. Set the DeviceID of the value to remove from the attribute msDS-KeyCredentialLink of the target object. Must be a valid GUID.  
+ - `/deviceID:<GUID>`: Required. Set the DeviceID of the value to remove from the attribute msDS-KeyCredentialLink of the target object. Must be a valid GUID.  
 
- - `/domain:<FQDN>**: Optional. Set the target Fully Qualified Domain Name (FQDN). If not provided, will try to resolve the FQDN of the current user.
+ - `/domain:<FQDN>`: Optional. Set the target Fully Qualified Domain Name (FQDN). If not provided, will try to resolve the FQDN of the current user.
     
- - `/dc:<IP/HOSTNAME>**: Optional. Set the target Domain Controller (DC). If not provided, will try to target the Primary Domain Controller (PDC).
+ - `/dc:<IP/HOSTNAME>`: Optional. Set the target Domain Controller (DC). If not provided, will try to target the Primary Domain Controller (PDC).
 
 Example: `Whisker.exe remove /target:computername$ /domain:constoso.local /dc:dc1.contoso.local /remove:2de4643a-2e0b-438f-a99d-5cb058b3254b`
 
