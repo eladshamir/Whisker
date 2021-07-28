@@ -50,7 +50,7 @@ Example: `Whisker.exe remove /target:computername$ /domain:constoso.local /dc:dc
 
 Example: `Whisker.exe clear /target:computername$ /domain:constoso.local /dc:dc1.contoso.local`
   
-*Warning: Clearing the msDS-KeyCredentialLink attribute of accounts configured for passwordless authentication will cause disruptions.*
+⚠️ *Warning: Clearing the msDS-KeyCredentialLink attribute of accounts configured for passwordless authentication will cause disruptions.*
 
 
 ### List all the values of the the msDS-KeyCredentialLink attribute of a target object:
