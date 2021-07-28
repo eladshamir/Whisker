@@ -31,7 +31,7 @@ Example: `Whisker.exe add /target:computername$ /domain:constoso.local /dc:dc1.c
 
  - `/target:<samAccountName>`: Required. Set the target name. Computer objects should end with a '$' sign.
     
- - `/deviceID:<GUID>`: Required. Set the DeviceID of the value to remove from the attribute msDS-KeyCredentialLink of the target object. Must be a valid GUID.  
+ - `/deviceID:<GUID>`: Required. Set the DeviceID of the value to remove from the attribute `msDS-KeyCredentialLink` of the target object. Must be a valid GUID.  
 
  - `/domain:<FQDN>`: Optional. Set the target Fully Qualified Domain Name (FQDN). If not provided, will try to resolve the FQDN of the current user.
     
