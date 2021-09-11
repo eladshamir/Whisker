@@ -463,7 +463,7 @@ This tool is based on code from DSInternals by Michael Grafnetter (@MGrafnetter)
             }
 
             Console.WriteLine("[*] You can now run Rubeus with the following syntax:\r\n");
-            Console.WriteLine("Rubeus.exe asktgt /user:{0} /certificate:{1} /password:\"{2}\" /domain:{3} /dc:{4} /show", target, certOutput, password, fqdn, dc);
+            Console.WriteLine("Rubeus.exe asktgt /user:{0} /certificate:{1} /password:\"{2}\" /domain:{3} /dc:{4} /getcredentials /show", target, certOutput, password, fqdn, dc);
         }
 
         static void Remove(string target, string fqdn, string dc, Guid deviceID)
