@@ -37,7 +37,7 @@ Example: `Whisker.exe add /target:computername$ /domain:constoso.local /dc:dc1.c
     
  - `/dc:<IP/HOSTNAME>`: Optional. Set the target Domain Controller (DC). If not provided, will try to target the Primary Domain Controller (PDC).
 
-Example: `Whisker.exe remove /target:computername$ /domain:constoso.local /dc:dc1.contoso.local /remove:2de4643a-2e0b-438f-a99d-5cb058b3254b`
+Example: `Whisker.exe remove /target:computername$ /domain:constoso.local /dc:dc1.contoso.local /deviceid:2de4643a-2e0b-438f-a99d-5cb058b3254b`
 
 
 ### Clear all the values of the the msDS-KeyCredentialLink attribute of a target object: 
