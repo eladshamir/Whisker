@@ -330,7 +330,7 @@ This tool is based on code from DSInternals by Michael Grafnetter (@MGrafnetter)
                     }
                     catch
                     {
-                        Console.WriteLine("[!] Could not resolve the current user's domain. Please use the --domain option to specify the Fully Qualified Domain Name (FQDN)");
+                        Console.WriteLine("[!] Could not resolve the current user's domain. Please use the /domain option to specify the Fully Qualified Domain Name (FQDN)");
                         return;
                     }
                 }
@@ -347,7 +347,7 @@ This tool is based on code from DSInternals by Michael Grafnetter (@MGrafnetter)
                     }
                     catch
                     {
-                        Console.WriteLine("[!] Could not locate the DC. Please use the --dc option to specify the DC's IP/hostname");
+                        Console.WriteLine("[!] Could not locate the DC. Please use the /dc option to specify the DC's IP/hostname");
                         return;
                     }
                 }
