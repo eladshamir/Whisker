@@ -423,7 +423,7 @@ This tool is based on code from DSInternals by Michael Grafnetter (@MGrafnetter)
 
             Console.WriteLine("[*] Generating certificate");
             cert = GenerateSelfSignedCert(target);
-            Console.WriteLine("[*] Certificate generaged");
+            Console.WriteLine("[*] Certificate generated");
             Console.WriteLine("[*] Generating KeyCredential");
             Guid guid = Guid.NewGuid();
             keyCredential = new KeyCredential(cert, guid, targetObject.Properties["distinguishedName"][0].ToString(), DateTime.Now);
