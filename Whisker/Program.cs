@@ -10,7 +10,7 @@ using System.Reflection;
 
 namespace Whisker
 {
-    class Program
+    public class Program
     {
         //Code taken from Rubeus
         private static DirectoryEntry GetLdapSearchRoot(string OUName, string domainController, string domain)
@@ -251,7 +251,7 @@ This tool is based on code from DSInternals by Michael Grafnetter (@MGrafnetter)
             );
         }
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             try
             {
